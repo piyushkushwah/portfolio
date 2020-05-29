@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    .social_media_icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1vh 0 1vh 0;
+    }
+
+    img {
+        width: 6vw;
+        height: 6vw;
+        margin-right: 4vw;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vw;
+    }
+}

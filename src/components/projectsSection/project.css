@@ -1,19 +1,54 @@
-.projectWrapper {
-    margin-top: 35px;
+@media only screen and (max-width: 768px) {
+    .projectWrapper {
+        margin-top: 35px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .scrollWrap {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .display-projects {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: scroll;
+        align-items: center;
+        margin-top: 35px;
+        width: fit-content;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        margin: 0;
+        width: 100vw;
+        height: 30vh;
+        margin-bottom: 35px;
+    }
+
+    .project1 {
+        background-color: #44FFD2;
+    }
+
+    .project2 {
+        background-color: #87F6FF;
+    }
+
+    .project3 {
+        background-color: #82FF9E;
+    }
+
+    .project4 {
+        background-color: #FACC6B;
+    }
 }
 
-.display-projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 35px;
-}
-
-.project1 {
+body {
     margin: 0;
-    width: 85vw;
-    height: 30vh;
-    background-color: #6C63FF;
-    margin-bottom: 35px;
 }

@@ -3,6 +3,21 @@
 @media only screen and (max-width: 768px) {
     .skillsWrapper {
         margin-top: 35px;
+        opacity: 0;
+    }
+
+    .do_anim {
+        animation: opacity 1s forwards;
+    }
+
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .heading {
@@ -45,15 +60,15 @@
         margin-top: 3px;
     }
 
-    .react {
+    /* .react {
         animation: reactLogoAnimate 4s infinite;
-    }
+    } */
 
-    @keyframes reactLogoAnimate {
+    /* @keyframes reactLogoAnimate {
         to {
             transform: rotateZ(360deg);
         }
-    }
+    } */
 
     .sec_1,
     .sec_2,

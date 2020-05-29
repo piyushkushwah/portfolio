@@ -1,0 +1,76 @@
+@import '../skillsSection/skills.css';
+
+@media only screen and (max-width: 768px) {
+
+    .form {
+        margin-top: 20px;
+        width: 85vw;
+    }
+
+    .contactWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .name-input,
+    .email-input,
+    .message {
+        width: 100%;
+        margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        font-size: 12px;
+        padding: 12px;
+        border-radius: 1000px;
+        box-sizing: border-box;
+        outline: none;
+        transition: 1s;
+        border: none;
+        /* background-color: #EBECF0; */
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        /* box-shadow: inset 2px 2px 3px #BABECC, inset -5px -5px 10px #fff; */
+    }
+
+    input:focus,
+    textarea:hover {
+        /* box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff; */
+        border-color: rgba(83, 83, 83, 0.281);
+    }
+
+    .submit-btn {
+        background-image: linear-gradient(to right, #AAFFA9, #11FFBD);
+        border: none;
+        width: 100%;
+        height: 5vh;
+        outline: none;
+        color: black;
+        font-size: x-small;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        border-radius: 1000px;
+        /* box-shadow: 8px 8px 20px #BABECC, 5px 5px 20px #fff; */
+        transition-duration: 1s;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn:hover {
+        box-shadow: 2px 2px 5px #BABECC, 2px 2px 5px #fff;
+    }
+
+    .submit-btn:active {
+        box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

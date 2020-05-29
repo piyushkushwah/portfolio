@@ -2,6 +2,7 @@ import React from 'react';
 
 function Heading(props) {
     const { name } = props;
+
     return (
         <div className="head_wrap_01">
             <div className="underline"></div>
