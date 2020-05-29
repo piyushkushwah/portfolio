@@ -2,8 +2,14 @@ import React from 'react';
 import './landing.css'
 
 function LandingPage() {
+    let wrapper = React.createRef();
+    const click_down = () => {
+        console.log(wrapper.current.offsetHeight + 220);
+        window.scrollTo(0, wrapper.current.offsetHeight + 20);
+    }
+
     return (
-        <div className="wrapper">
+        <div ref={wrapper} className="wrapper">
             <div className="image">
                 <svg xmlns="http://www.w3.org/2000/svg" width="710" height="710" viewBox="0 0 1142.85 1080">
                     <defs>
@@ -44,7 +50,7 @@ function LandingPage() {
                     I'm Piyush.<br /> Nice to meet you.
                 </h1>
                 <p className="discription">I am a <strong>FullStack Developer.</strong>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <svg id="downIcon" xmlns="http://www.w3.org/2000/svg" width="78.436" height="78.436" viewBox="0 0 78.436 78.436">
+                <svg onClick={click_down} id="downIcon" xmlns="http://www.w3.org/2000/svg" width="78.436" height="78.436" viewBox="0 0 78.436 78.436">
                     <path id="arrowDown" d="M39.114.563A38.551,38.551,0,1,1,.563,39.114,38.544,38.544,0,0,1,39.114.563ZM56.819,36.471,35.756,15.408a3.715,3.715,0,0,0-5.27,0L27.844,18.05a3.715,3.715,0,0,0,0,5.27L43.637,39.114,27.844,54.907a3.715,3.715,0,0,0,0,5.27l2.643,2.643a3.715,3.715,0,0,0,5.27,0L56.819,41.756A3.734,3.734,0,0,0,56.819,36.471Z" transform="matrix(0.017, 1, -1, 0.017, 77.643, -0.572)" />
                 </svg>
             </div>
