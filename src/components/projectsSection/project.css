@@ -27,9 +27,11 @@
     .project3,
     .project4 {
         margin: 0;
-        width: 100vw;
+        width: 90vw;
         height: 30vh;
         margin-bottom: 35px;
+        border-radius: 10px;
+        margin-right: 5px;
     }
 
     .project1 {
